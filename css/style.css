@@ -299,6 +299,12 @@ form img{
     width: 85%;
     transition: ease-in-out 200ms;
 }
+
+.input-mensagem{
+    padding-left: 2%;
+    height: 25vh;
+}
+
 .contato__inputs__input:focus{
     border-bottom: 6px solid var(--verde-xbox);
 }
@@ -667,6 +673,11 @@ form img{
         border-bottom: 8px solid var(--verde-xbox);
     }
     
+    .input-mensagem{
+        padding-left: 2%;
+        height: 25vh;
+    }
+
     #contato__sbmt{
         margin-top: 8%;
         background-color: var(--verde-xbox);
@@ -1039,8 +1050,9 @@ form img{
     }
 
     .input-mensagem{
-        height: 20vh;
+        height: 25vh;
         resize: none;
+        padding-right: 2%;
     }
     .contato__inputs__input:focus{
         border-bottom: 6px solid var(--verde-xbox);
