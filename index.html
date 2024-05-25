@@ -175,16 +175,20 @@
             </p>
         </div>
 
-        <form action="">
+        <form action="" class="contato__form">
             <div class="contato__img">
                 <img src="assets/image/telefone.svg" alt="">
             </div>
 
             <div class="contato__inputs">
-                <input type="text" placeholder="Nome" class="contato__inputs__input input-nome" oninput="showBtn(), alerta()" required>
-                <input type="email" placeholder="e-mail" class="contato__inputs__input input-email" oninput="showBtn()" required>
-                <input type="text" placeholder="Assunto" class="contato__inputs__input input-assunto" oninput="showBtn(), alerta()" required>
-                <textarea name="" id="" cols="5" rows="10" placeholder="Mensagem" class="contato__inputs__input input-mensagem" oninput="showBtn(), alertaMsg()" required></textarea>
+                <input type="text" placeholder="Nome" class="contato__inputs__input input-nome" required maxlength="50" name="nome">
+                <span class="contato__inputs__error__nome"></span>
+                <input type="email" placeholder="e-mail" class="contato__inputs__input input-email" required name="email">
+                <span class="contato__inputs__error__email"></span>
+                <input type="text" placeholder="Assunto" class="contato__inputs__input input-assunto" required maxlength="50" name="assunto">
+                <span class="contato__inputs__error__assunto"></span>
+                <textarea name="mensagem" id="" cols="5" rows="10" placeholder="Mensagem" class="contato__inputs__input input-mensagem" required maxlength="300"></textarea>
+                <span class="contato__inputs__error__mensagem"></span>
                 <input type="submit" value="Enviar Mensagem" id="contato__sbmt" disabled>
             </div>
 
